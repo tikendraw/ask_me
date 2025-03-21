@@ -1,0 +1,34 @@
+[project]
+name = "ask-me"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=0.3.21",
+    "langgraph>=0.3.18",
+    "llama-index-embeddings-gemini>=0.3.1",
+    "llama-index>=0.12.25",
+    "pydantic>=2.10.6",
+    "streamlit>=1.43.2",
+    "llama-index-core>=0.12.25",
+    "llama-index-storage-docstore-redis>=0.3.0",
+    "llama-index-storage-index-store-redis>=0.4.0",
+    "llama-index-llms-gemini>=0.4.11",
+    "llama-index-llms-litellm>=0.3.0",
+    "ipykernel>=6.29.5",
+    "matplotlib>=3.10.1",
+    "ipython-ngql>=0.14.3",
+    "nebula3-python>=3.8.3",
+    "llama-index-graph-stores-nebula>=0.4.0",
+    "llama-index-readers-wikipedia>=0.3.0",
+    "wikipedia>=1.4.0",
+    "llama-index-readers-remote>=0.3.0",
+    "html2text>=2024.2.26",
+    "llama-index-readers-web>=0.3.8",
+    "fastapi>=0.115.11",
+    "uvicorn>=0.34.0",
+    "beautifulsoup4>=4.13.3",
+    "requests>=2.32.3",
+    "llama-index-retrievers-bm25>=0.5.2",
+]
