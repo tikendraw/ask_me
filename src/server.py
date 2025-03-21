@@ -19,15 +19,16 @@ logger = Logger().get_logger()
 # Initialize LLM and embedding model
 try: 
     model = os.getenv("DEFAULT_MODEL")
-    if model is None:
-        raise Exception("DEFAULT_MODEL environment variable not set. Please set it.")
+    api_key =os.getenv('DEFAULT_MODEL_API_KEY')
+    if model is None or api_key is None:
+        raise Exception("DEFAULT_MODEL or DEFAULT_MODEL_API_KEY environment variable not set. Please set it.")
     else:
-        models=[model]
+        model='HEHE'
 except:
     logger.error("DEFAULT_MODEL environment variable not set. Please set it.")
     exit()
 
-llm = LiteLLM(temperature=0, model=models[0])
+llm = LiteLLM(temperature=0, model=model, api_key=api_key)
 embed_model = GeminiEmbedding()
 Settings.embed_model = embed_model
 Settings.llm = llm

@@ -38,8 +38,3 @@
     streamlit run src.frontend.py
     ```
     
-
-Note: 
-1. Rag do not have overall context of entire document, so it will not be able to answer questions that are present on a high level.
-2. Rag's performance depends on the model you are using. and the model's ability to understand the context of the document.
-3.  Rag's performance can be improved by tuning chunk size and retrieved number of chunks, reranking and more. This implementation does not account that. (it requries time and resource)
